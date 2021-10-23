@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="manageDoor()"> Click </button>
+    <img id="Door" src="opened.png" ></img>
+    <script>
+        function manageDoor(){
+            var img= document.getElementById("Door");
+            if(img.src.endsWith("opened.png")){
+                img.src="closed.png";
+            }
+            else{
+                img.src="opened.png";
+            }
+        }
+    </script>
+
+</body>
+</html>
